@@ -15,7 +15,7 @@ let constraints={
     video:true,
 }
 // // navigator is a gloabl obj where this gives info abouot browser
-navigator.mediaDevices.getUserMedia(constraints)
+navigator.mediaDevices.getDisplayMedia(constraints)
 .then((stream) => {
     video.srcObject = stream;
 
